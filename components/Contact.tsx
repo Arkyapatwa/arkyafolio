@@ -5,9 +5,9 @@ const Contact = () => {
     <>
       <div
         id="Contact"
-        className="w-full h-screen flex bg-yellow-600 dark:bg-white"
+        className="w-full h-screen flex bg-custom4 dark:bg-white"
       >
-        
+
       </div>
     </>
   );

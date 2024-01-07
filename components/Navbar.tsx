@@ -26,7 +26,7 @@ const Navbar = () => {
           <b>A</b>
         </span>
         <div className="hidden md:flex gap-6 flex-row mx-20">
-          <a href="#Home" className="flex items-center px-5">
+          <a href="#Home" className="flex items-center px-5 font-serif ">
             Home
           </a>
           <a href="#About" className="flex items-center px-5">

@@ -5,7 +5,7 @@ const Project = () => {
     <>
       <div
         id="Project"
-        className="w-full h-screen flex bg-white dark:bg-white"
+        className="w-full h-screen flex bg-custom3 dark:bg-white"
       ></div>
     </>
   );
