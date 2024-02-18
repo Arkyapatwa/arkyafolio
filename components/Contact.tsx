@@ -4,8 +4,8 @@ const Contact = () => {
   return (
     <>
       <div
-        id="Contact"
-        className="w-full h-screen flex bg-custom4 dark:bg-white"
+        id="contact"
+        className="w-full h-screen flex "
       >
 
       </div>

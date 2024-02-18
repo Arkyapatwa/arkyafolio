@@ -7,7 +7,7 @@ import Project from "@/components/Project";
 export default function Page() {
   return (
     <>
-      <div className="relative w-auto h-auto">
+      <div className="relative">
         <Home />
         <About />
         <Project />
