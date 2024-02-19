@@ -8,23 +8,23 @@ export function FloatingNavDemo() {
     {
       name: "Home",
       link: "#home",
-      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconHome className="h-4 w-4 hover:text-neutral-500 dark:hover:bg-slate-900 hover:rounded-full rounded-full " />,
     },
     {
       name: "About",
       link: "#about",
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconUser className="h-4 w-4 hover:text-neutral-500 dark:hover:bg-slate-900 hover:rounded-full rounded-full " />,
     },
     {
       name: "Projects",
       link: "#projects",
-      icon: <BugIcon className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <BugIcon className="h-4 w-4 hover:text-neutral-500 dark:hover:bg-slate-900 hover:rounded-full rounded-full" />,
     },
     {
       name: "Contact",
       link: "#contact",
       icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+        <IconMessage className="h-4 w-4 hover:text-neutral-500 dark:hover:bg-slate-900 hover:rounded-full rounded-full" />
       ),
     },
   ];

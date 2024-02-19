@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   motion,
   AnimatePresence,
@@ -12,6 +12,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
+import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 
 export const FloatingNav = ({
   navItems,
@@ -28,6 +29,11 @@ export const FloatingNav = ({
 
   const [visible, setVisible] = useState(true);
   const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setTheme("dark")
+  }, [])
+
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
@@ -81,15 +87,15 @@ export const FloatingNav = ({
         ))}
 
         <Button
-          className="hover:bg-slate-900 hover:rounded-full rounded-full"
+          className="dark:hover:bg-slate-900 hover:rounded-full rounded-full"
           variant="ghost"
           size="icon"
           onClick={() => setTheme(theme === "light" ? "dark" : "light")}
         >
           {theme === "light" ? (
-            <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+            <SunIcon className="h-[1.1rem] w-[1.1rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
           ) : (
-            <Moon className="h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+            <MoonIcon className="h-[1.1rem] w-[1.1rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
           )}
           <span className="sr-only">Toggle theme</span>
         </Button>

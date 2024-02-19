@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { FloatingNavDemo } from "./Navbar";
 
@@ -5,7 +7,7 @@ const Home = () => {
   return (
     <>
       <div id="home">
-      <FloatingNavDemo />
+        <FloatingNavDemo />
       </div>
     </>
   );
